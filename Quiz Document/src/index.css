@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-900;
+}
+
+/* Rich text editor styling */
+.mui-tiptap-RichTextEditor-root {
+  background-color: rgb(15 23 42) !important;
+  color: rgb(226 232 240) !important;
+  border: none !important;
+}
+
+.mui-tiptap-RichTextEditor-content {
+  background-color: rgb(15 23 42) !important;
+  color: rgb(226 232 240) !important;
+  min-height: 200px;
+  padding: 16px;
+}
+
+.mui-tiptap-RichTextEditor-content .ProseMirror {
+  outline: none;
+  min-height: 200px;
+  color: rgb(226 232 240);
+}
+
+.mui-tiptap-RichTextEditor-content .ProseMirror p {
+  margin-bottom: 0.5rem;
+}
+
+.mui-tiptap-MenuBar-root {
+  background-color: rgb(30 41 59) !important;
+  border-bottom: 1px solid rgb(51 65 85) !important;
+  flex-wrap: wrap;
+}
+
+.mui-tiptap-MenuBar-root .MuiButtonBase-root {
+  color: rgb(148 163 184) !important;
+}
+
+.mui-tiptap-MenuBar-root .MuiButtonBase-root:hover {
+  background-color: rgb(51 65 85) !important;
+}
+
+.mui-tiptap-MenuBar-root .MuiButtonBase-root.Mui-selected {
+  color: rgb(45 212 191) !important;
+  background-color: rgba(45, 212, 191, 0.1) !important;
+}
+
+.mui-tiptap-MenuControlsContainer-root {
+  gap: 2px;
+  padding: 4px;
+}
+
+.mui-tiptap-MenuDivider-root {
+  border-color: rgb(51 65 85) !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(15 23 42);
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(51 65 85);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(71 85 105);
+}
